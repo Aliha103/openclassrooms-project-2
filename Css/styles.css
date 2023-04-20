@@ -14,6 +14,12 @@ html {
 
 body {
   font-family: 'Raleway';
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
 }
 
 /* for computer screen*/
@@ -30,9 +36,10 @@ body {
 
   nav {
     display: flex;
-    padding: 2% 5%;
     justify-content: space-between;
-    margin-right: -25px;
+    margin-right: 60px;
+    margin-left: 70px;
+    margin-top: 20px;
   }
 
   .nav-links ul {
@@ -63,7 +70,7 @@ body {
     display: block;
     cursor: pointer;
     position: absolute;
-    top: -35px;
+    top: -20px;
     left: 0;
     width: 0;
   }
@@ -80,10 +87,7 @@ body {
 
   /*title*/
   #div-title {
-    text-align: left;
-    text-align: justify;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-left: 25px;
   }
 
@@ -235,14 +239,18 @@ body {
     align-items: center;
   }
 
+  /* information*/
+
   .information-101 {
     display: flex;
     text-align: start;
-    flex-wrap: nowrap;
-    box-sizing: border-box;
     margin-bottom: 10px;
-    width: 52%;
+    width: 100%;
     margin-left: 10px;
+  }
+
+  .information-101 p {
+    width: 27%;
   }
 
   .information-101 .circle {
@@ -280,22 +288,23 @@ body {
   /* css for Accommodation in marceille*/
   .container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 35px;
+    padding-right: 55px;
   }
 
   .card-container {
     float: left;
     display: grid;
     justify-items: left;
-    margin-left: 35px;
     align-items: center;
     background-color: #F2F2F2;
     border-radius: 20px;
     box-sizing: border-box;
     width: 100%;
-    max-width: 850px;
-    margin-right: 35px;
   }
 
   h3 {
@@ -308,18 +317,17 @@ body {
     background-color: #F2F2F2;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    max-width: 100%;
     grid-gap: 15px;
-    padding: 10px;
-    margin-left: 10px;
+    padding-left: 10px;
     border-radius: 20px;
-    margin-right: 10px;
+    padding-right: 10px;
   }
 
   .card {
     width: 100%;
     height: 300px;
-    display: grid;
-    grid-template-rows: max-content 200px 1fr;
     /*border: 2px solid #ccc;*/
     background-color: white;
     border-radius: 20px;
@@ -327,6 +335,7 @@ body {
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
+    margin-right: 15px;
   }
 
   .card-container .card img {
@@ -378,43 +387,45 @@ body {
     background-color: #F2F2F2;
     border-radius: 20px;
     box-sizing: border-box;
-    width: 450px;
-    max-width: 450px;
-    margin-right: 35px;
+    width: 40%;
+    max-width: 40%;
+    padding-right: 20px;
   }
 
   .popular-container .mostpopularhead {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 60px;
-    margin-left: 15px;
-    width: auto;
+    height: 30px;
+    width: 100%;
+    margin-top: -10px;
   }
 
   .popular-container .mostpopularhead span {
-    margin-top: 10px;
-    margin-left: 230px;
+    font-size: 18px;
+    margin-top: 15px;
+    padding-right: 20px;
   }
 
   .popular-container .mostpopularhead h3 {
-    font-size: 18px;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: nowrap;
     margin-top: 10px;
   }
 
   .popular-container .cards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: max-content max-content 1fr;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     grid-gap: 20px;
-    padding: 10px;
+    margin-left: 5px;
+    margin-right: -10px;
     border-radius: 20px;
-    margin-left: 25px;
-    margin-top: -70px;
   }
 
   .popular-container .card {
-    width: 370px;
+    width: 100% !important;
     height: 200px;
     display: flex;
     flex-direction: row;
@@ -423,7 +434,7 @@ body {
 
   .popular-container .card img {
     object-fit: cover;
-    width: 155px;
+    width: 40% !important;
     height: 190px;
     margin-top: -2px;
     border-top-left-radius: 20px;
@@ -433,17 +444,17 @@ body {
   .popular-container .content {
     display: flex;
     flex-direction: column;
-    text-align: justify;
+    text-align: start;
   }
 
   .popular-container .content h4 {
     font-size: 15px;
-    margin-left: 15px;
+    margin-left: 6px;
   }
 
   .popular-container .content p {
     margin: 15px;
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .popular-container .content .stars {
@@ -465,6 +476,8 @@ body {
     padding-left: 30px;
     padding-right: 15px;
     margin-top: 30px;
+    width: 100%;
+    padding-bottom: 50px;
   }
 
   .activity-cards {
@@ -472,6 +485,10 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 15px;
+    width: 100%;
+    max-width: 100%;
+    grid-auto-rows: 250px;
+    margin-right: 50px;
     margin-left: 5px;
     border-radius: 20px;
   }
@@ -479,36 +496,41 @@ body {
   .activity-cards article {
     background-color: #fff;
     border: 1px solid #ddd;
-    height: 250px;
-    width: 300px;
+    height: 100% !important;
+    width: 100% !important;
     border-radius: 20px;
+    margin-right: 15px;
   }
 
   .activity-cards img {
     object-fit: cover;
-    align-items: center;
-    width: 300px;
+    align-items: flex-start;
+    width: 100% !important;
     height: 190px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
   }
 
-  .activity-cards article:nth-child(1),
+  .activity-cards article:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1/3;
+  }
+
   .activity-cards article:nth-child(3) {
-    grid-row-end: span 6;
-    height: 520px;
+    grid-column: 3;
+    grid-row: 1/3;
   }
 
   .activity-cards article:nth-child(1) img,
   .activity-cards article:nth-child(3) img {
-    grid-row-end: span 4;
+    grid-row-end: span 2;
     height: 450px;
   }
 
   .activities-container .activity-cards .activity-content h4 {
     font-size: 16px;
     padding-bottom: 5px;
-    padding-left: 20px;
+    padding-left: 10px;
   }
 
   /*footer*/
@@ -1134,17 +1156,14 @@ body {
 
   .nav-links {
     display: flex;
-    justify-content: space-between;
-    align-items: start;
-    width: 105%;
-    border-bottom: 2px solid #000;
+    width: 100%;
+    border-bottom: 2px solid #DEEBFF;
     padding-bottom: 10px;
   }
 
   .nav-links ul {
     display: flex;
     list-style: none;
-    justify-content: space-between;
     font-size: 20px;
     padding: 0;
     margin: 0;
@@ -1167,6 +1186,7 @@ body {
     position: relative;
     text-decoration: none;
     padding: 10px;
+    color: black;
   }
 
   .nav-links a:hover {
