@@ -145,12 +145,14 @@ header {
   display: flex;
   gap: 15px;
 }
-#Filters{
+
+#Filters {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
-.filterscontainer button{
+
+.filterscontainer button {
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -165,25 +167,29 @@ header {
   border-radius: 50px;
 
 }
+
 .filterscontainer button i {
- width: 50px;
- height: 50px;
- border-radius: 50%;
- border: 2px solid #DEEBFF;
- background-color: #DEEBFF;
- color: #0065FC;
- padding:10px;
- display: flex;
- align-items: center;
- justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #DEEBFF;
+  background-color: #DEEBFF;
+  color: #0065FC;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.filterscontainer span{
+
+.filterscontainer span {
   margin-left: 10px;
 }
+
 /* Add hover effect */
 button:hover {
   background-color: #DEEBFF;
 }
+
 /* information*/
 
 .information-101 {
@@ -309,7 +315,8 @@ button:hover {
   grid-row-end: span 2;
   height: 355px;
 }
-.activity-content{
+
+.activity-content {
   padding-left: 10px;
 }
 
@@ -896,25 +903,29 @@ button:hover {
   }
 
   /* filter css */
-  .filterscontainer{
+  .filterscontainer {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-#Filters{
-  display: flex;
-  flex-wrap: wrap;
-  width: 350px;
-}
-.low-form{
-  order: 0;
-}
-.fam-form{
-  order: 2;
-}
-.pet-form{
-  order: 3;
-}
+
+  #Filters {
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+  }
+
+  .low-form {
+    order: 0;
+  }
+
+  .fam-form {
+    order: 2;
+  }
+
+  .pet-form {
+    order: 3;
+  }
 
   /*information*/
   .information-101 {
