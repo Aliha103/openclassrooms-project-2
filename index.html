@@ -22,8 +22,8 @@
         <a href="index.html"><img src="assets/logo/Booki.png" alt="Logo"></a>
         <div class="nav-links">
             <ul>
-                <li class="left-link"><a href="#">Accommodations</a></li>
-                <li class="right-link"><a href="#">Activities</a></li>
+                <li class="left-link"><a href="#Accommodations_maeseille">Accommodations</a></li>
+                <li class="right-link"><a href="#Activities_mareille">Activities</a></li>
             </ul>
         </div>
     </header>
@@ -42,15 +42,15 @@
     <div id="search-computer">
         <form class="search_form">
             <i class="fa-solid fa-location-dot"></i>
-            <input type="button" class="search__input" value="Marseille, France">
+            <input type="text" class="search__input" placeholder="Marseille, France">
             <input type="submit" class="input_value" value="Search">
         </form>
     </div>
 
     <!--Adding the search form -->
 
-    <div class="mobile-search">
-        <form id="search-form-1">
+    <div id="mobile-search">
+        <form class="search-form-1">
             <i class="fa-solid fa-location-dot"></i>
             <input type="button" class="search__input" value="Marseille, France">
             <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
@@ -58,35 +58,26 @@
     </div>
 
     <!--filters-->
-
     <div class="filterscontainer">
         <h3 class="filter_title">Filters</h3>
-        <div id="filters">
-            <form class="low-form">
-                <div class="circle">
-                    <i class="fa-solid fa-money-bill-wave"></i>
-                </div>
-                <input type="button" class="select__input" value="Low cost">
-            </form>
-            <form class="fam-form">
-                <div class="circle">
-                    <i class="fa-solid fa-child-reaching"></i>
-                </div>
-                <input type="button" class="select__input" value="Family-friendly">
-            </form>
-            <form class="rom-form">
-                <div class="circle">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-                <input type="button" class="select__input" value="Romantic">
-            </form>
-            <form class="pet-form">
-                <div class="circle">
-                    <i class="fa-solid fa-dog"></i>
-                </div>
-                <input type="button" class="select__input" value="Pets allowed">
-            </form>
-        </div>
+        <div id="Filters">
+        <button class="low-form">
+                <i class="fa-solid fa-money-bill-wave"></i>
+            <span class="label">Low cost</span>
+        </button>
+        <button class="fam-form">
+                <i class="fa-solid fa-child-reaching"></i>
+            <span class="label">Family-friendly</span>
+        </button>
+        <button class="rom-form">
+                <i class="fa-solid fa-heart"></i>
+            <span class="label">Romantic</span>
+        </button>
+        <button class="pet-form">
+                <i class="fa-solid fa-dog"></i>
+            <span class="label">Pets allowed</span>
+        </button>
+    </div>
     </div>
 
     <!--information-->
@@ -99,7 +90,7 @@
 
     <div id="parent_container">
         <!--Accommodation in Maeseille-->
-        <div class="accommodation-container">
+        <div id="Accommodations_maeseille" class="accommodation-container">
             <h3 class="accommodation_heading">Accommodations in Marseille</h3>
             <div class="Maesille_cards">
                 <article class="accommodation-card">
@@ -107,7 +98,7 @@
                         alt="Auberge la Cannebière">
                     <div class="content">
                         <h4>Auberge la Cannebière</h4>
-                        <p> Night starting at <em>25€</em></p>
+                        <p> Night starting at <b>25€</b></p>
                         <div class="stars">
                             <i class="fa-solid fa-star" style="color: #0065FC;"></i>
                             <i class="fa-solid fa-star" style="color: #0065fc;"></i>
@@ -121,7 +112,7 @@
                     <img src="assets/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hòtel du port">
                     <div class="content">
                         <h4>Hòtel du port</h4>
-                        <p> Night starting at 52€</p>
+                        <p> Night starting at <b>52€</b></p>
                         <div class="stars">
                             <i class="fa-solid fa-star" style="color: #0065fc;"></i>
                             <i class="fa-solid fa-star" style="color: #0065fc;"></i>
@@ -135,7 +126,7 @@
                     <img src="assets/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Les mouettes Hotel">
                     <div class="content">
                         <h4>Les mouettes Hotel</h4>
-                        <p> Night starting at 76€</p>
+                        <p> Night starting at <b>76€</b></p>
                         <div class="stars">
                             <i class="fa-solid fa-star" style="color: #0065fc;"></i>
                             <i class="fa-solid fa-star" style="color: #0065fc;"></i>
@@ -149,7 +140,7 @@
                     <img src="assets/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hòtel de la mer">
                     <div class="content">
                         <h4>Hòtel de la mer</h4>
-                        <p> Night starting at 46€</p>
+                        <p> Night starting at <b>46€</b></p>
                         <div class="stars">
                             <i class="fa-solid fa-star" style="color: #0065fc;"></i>
                             <i class="fa-solid fa-star" style="color: #0065fc;"></i>
@@ -163,7 +154,7 @@
                     <img src="assets/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le Panier">
                     <div class="content">
                         <h4>Auberge le Panier</h4>
-                        <p> Night starting at 23€</p>
+                        <p> Night starting at <b>23€</b></p>
                         <div class="stars">
                             <i class="fa-solid fa-star" style="color: #0065fc;"></i>
                             <i class="fa-solid fa-star" style="color: #0065fc;"></i>
@@ -178,7 +169,7 @@
                         alt="Hòtel chez Amina">
                     <div class="content">
                         <h4>Hòtel chez Amina</h4>
-                        <p> Night starting at 96€</p>
+                        <p> Night starting at <b>96€</b></p>
                         <div class="stars">
                             <i class="fa-solid fa-star" style="color: #0065fc;"></i>
                             <i class="fa-solid fa-star" style="color: #0065fc;"></i>
@@ -189,7 +180,9 @@
                     </div>
                 </article>
             </div>
-            <h3 class="more_details">Show more</h3>
+            <a class="more_details" href="#">
+                <h3>Show more</h3>
+            </a>
         </div>
         <!--Most Popular-->
         <div class="popular-container">
@@ -203,7 +196,7 @@
                         alt="Morning Sun Hotel">
                     <div class="content">
                         <h4>Morning Sun Hotel</h4>
-                        <p> Night starting at 128€</p>
+                        <p> Night starting at <b> 128€ </b> </p>
                         <div class="stars">
                             <i class="fa-solid fa-star" style="color: #0065fc;"></i>
                             <i class="fa-solid fa-star" style="color: #0065fc;"></i>
@@ -218,7 +211,7 @@
                         alt="Au coeur de l'eau Bed and Breakfast">
                     <div class="content">
                         <h4>Au coeur de l'eau Bed and Breakfast</h4>
-                        <p> Night starting at 71€</p>
+                        <p> Night starting at <b>71€</b></p>
                         <div class="stars">
                             <i class="fa-solid fa-star" style="color: #0065fc;"></i>
                             <i class="fa-solid fa-star" style="color: #0065fc;"></i>
@@ -233,7 +226,7 @@
                         alt="Tout bleu et Blanc Hotel">
                     <div class="content">
                         <h4>Tout bleu et Blanc Hotel</h4>
-                        <p> Night starting at 68€</p>
+                        <p> Night starting at <b>68€</b> </p>
                         <div class="stars">
                             <i class="fa-solid fa-star" style="color: #0065fc;"></i>
                             <i class="fa-solid fa-star" style="color: #0065fc;"></i>
@@ -249,44 +242,44 @@
     </div>
 
     <!-- Activities in Marseille-->
-    <div class="activities-container">
+    <div id="Activities_mareille" class="activities-container">
         <h3>Activities in Marseille</h3>
         <div class="activity-cards">
             <article id="port-card">
                 <img src="assets/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Old Port">
                 <div class="activity-content">
-                    <h4>Old Port</h4>
+                    <h3>Old Port</h3>
                 </div>
             </article>
             <article id="fort-card">
                 <img src="assets/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomégues Fort">
                 <div class="activity-content">
-                    <h4>Pomégues Fort</h4>
+                    <h3>Pomégues Fort</h3>
                 </div>
             </article>
             <article id="park-card">
                 <img src="assets/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                     alt="Calanqyes National Park">
                 <div class="activity-content">
-                    <h4>Calanqyes National Park</h4>
+                    <h3>Calanqyes National Park</h3>
                 </div>
             </article>
             <article id="notre-card">
                 <img src="assets/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
                 <div class="activity-content">
-                    <h4>Notre-Dame-de-la-Garde</h4>
+                    <h3>Notre-Dame-de-la-Garde</h3>
                 </div>
             </article>
             <article id="island-card">
                 <img src="assets/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul Island">
                 <div class="activity-content">
-                    <h4>Frioul Island</h4>
+                    <h3>Frioul Island</h3>
                 </div>
             </article>
             <article id="longchamp-card">
                 <img src="assets/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp Park">
                 <div class="activity-content">
-                    <h4>Longchamp Park</h4>
+                    <h3>Longchamp Park</h3>
                 </div>
             </article>
         </div>
