@@ -146,15 +146,15 @@ header {
   gap: 15px;
 }
 
-#Filters {
+#filters {
   display: flex;
   flex-direction: row;
+  width: 100%;
   gap: 10px;
 }
 
 .filterscontainer button {
   display: flex;
-  justify-content: space-between;
   text-align: center;
   height: 50px;
   min-width: 100px;
@@ -169,6 +169,7 @@ header {
 }
 
 .filterscontainer button i {
+  display: flex;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -176,7 +177,6 @@ header {
   background-color: #DEEBFF;
   color: #0065FC;
   padding: 10px;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -773,6 +773,7 @@ button:hover {
   .nav-links {
     width: 100%;
     margin-top: 5px;
+    padding-left: 10px;
   }
 
   .nav-links ul {
@@ -909,23 +910,41 @@ button:hover {
     width: 100%;
   }
 
-  #Filters {
+  #filters {
     display: flex;
     flex-wrap: wrap;
-    width: 350px;
+    width: 100%;
   }
+
 
   .low-form {
     order: 0;
+    width: 45% !important;
+    font-size: auto !important;
+    gap: 10%;
+  }
+
+  .rom-form {
+    width: 45%;
+    height: auto !important;
+    gap: 10%;
   }
 
   .fam-form {
     order: 2;
+    width: 60%;
+    height: auto !important;
+    gap: 10%;
   }
 
   .pet-form {
     order: 3;
+    width: 55%;
+    height: auto !important;
+    gap: 10%;
   }
+
+
 
   /*information*/
   .information-101 {
