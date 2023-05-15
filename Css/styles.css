@@ -1141,7 +1141,7 @@ a.active {
 
   .popular-container .card {
     width: 100% !important;
-    height: 40%;
+    height: 150px !important;
     display: flex;
     flex-direction: row;
     border-radius: 20px;
@@ -1182,14 +1182,6 @@ a.active {
     display: flex;
     margin-left: 15px;
     margin-bottom: 15px;
-  }
-
-  .popular-container .stars .stars span {
-    color: #0065FC;
-    margin: 0 2px;
-    font-size: 5px;
-    float: left;
-    justify-content: end;
   }
 
   /*  css for Activities in Marceille */
